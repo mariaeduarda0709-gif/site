@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categoria - Terror</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #000;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #b366ff; /* Roxo */
+      color: #fff;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* Ícones canto direito */
+    .icons {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .icons a {
+      color: #fff;
+      font-size: 22px;
+      text-decoration: none;
+    }
+
+    .icons a:hover {
+      color: #ffcc00;
+    }
+
+    /* Ícone câmera central */
+    .camera {
+      font-size: 35px;
+    }
+
+    /* Menu de navegação */
+    nav {
+  background-color: #000;       
+  padding: 15px 30px;           
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;           
+}
+
+nav a {
+  color: #fff;                  
+  text-decoration: none;         
+  font-weight: bold;             
+  font-size: 16px;               
+  transition: color 0.3s ease;   
+}
+
+nav a:hover {
+  color: #ffcc00;                
+}
+
+
+    /* Título da categoria */
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Seção de filmes */
+    .filmes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;             
+  flex-wrap: wrap;
+  margin: 40px 20px;     
+}
+
+.filme {
+  text-align: center;
+  width: 200px;          
+}
+
+.filme img {
+  width: 200px;          
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 10px;   
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.filme img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.filme a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin-top: 12px;      
+  font-weight: bold;
+  font-size: 16px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="camera">🎥</div>
+    <div class="icons">
+      <a href="#">⭐</a>
+      <a href="#">👤</a>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav>
+    <a href="#">Terror</a>
+    <a href="#">Comédia</a>
+    <a href="#">Romance</a>
+    <a href="#">Ação</a>
+    <a href="#">Ficção Científica</a>
+  </nav>
+
+  <!-- Título da categoria -->
+  <h2>terror</h2>
+
+  <!-- Filmes -->
+  <section class="filmes">
+    <div class="filme">
+      <a href="#">
+        <img src="https://cinema10.com.br/upload/featuredImage.php?url=https%3A%2F%2Fcinema10.com.br%2Fupload%2Ffilmes%2Ffilmes_16330_14845-medio.jpg" alt="Filme 1">
+        SORRIA
+      </a>
+    </div>
+    <div class="filme">
+      <a href="#">
+        <img src="https://uauposters.com.br/media/catalog/product/cache/1/small_image/333x500/9df78eab33525d08d6e5fb8d27136e95/7/7/770020150308-uau-posters-filmes-terror-annabelle.jpg" alt="Filme 2">
+        ANNABELLE
+      </a>
+    </div>
+    <div class="filme">
+      <a href="#">
+        <img src="https://leouve.com.br/wp-content/uploads/2022/10/Filme-terror.jpeg" alt="Filme 3">
+        INVOCAÇÃO DO MAL 
+      </a>
+    </div>
+  </section>
+</body>
+</html>
