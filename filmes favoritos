@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes Favoritos</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #b366ff; /* Fundo roxo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Container central */
+    .container {
+      background-color: #d9b3ff; /* Roxo mais claro */
+      padding: 20px;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 500px;
+      position: relative; /* Necessário para posicionar os ícones */
+    }
+
+    /* Ícones no canto superior esquerdo */
+    .icons {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .icons a {
+      font-size: 24px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .icons a:hover {
+      color: #ffcc00;
+    }
+
+    /* Ícone câmera lateral */
+    .camera {
+      position: absolute;
+      left: -60px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+    }
+
+    /* Ícone seta de voltar */
+    .voltar {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      font-size: 28px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .voltar:hover {
+      color: #ffcc00;
+    }
+
+    /* Título */
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    /* Filmes em coluna */
+    .filmes {
+  display: flex;
+  flex-direction: column;   
+  gap: 30px;                 
+  align-items: center;     
+  margin: 40px 0;         
+}
+
+.filme {
+  text-align: center;
+}
+
+.filme img {
+  width: 300px;          
+  height: 200px;            
+  border: 3px solid #000;  
+  border-radius: 12px;      
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filme img:hover {
+  transform: scale(1.08);   
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.filme a {
+  display: block;
+  margin-top: 10px;         
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;         
+}
+
+  </style>
+</head>
+<body>
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Ícones favoritos e perfil -->
+    <div class="icons">
+      <a href="#">👤</a>
+      <a href="#">⭐</a>
+    </div>
+
+    <!-- Ícone câmera -->
+    <div class="camera">🎥</div>
+
+    <!-- Título -->
+    <h2>filmes favoritos</h2>
+
+    <!-- Lista de filmes -->
+    <section class="filmes">
+      <div class="filme">
+        <a href="#">
+          <img src="https://jardimdasamericas.com.br/uploads/2025/06/capa-filme-como-treinar-o-seu-dragao-8c2e2-large.png" alt="Filme 1">
+        como-treinar-o-seu-dragao
+        </a>
+      </div>
+      <div class="filme">
+        <a href="#">
+          <img src="https://lh4.googleusercontent.com/xbryw1wWK0SAxsKaNRX7QnMcaTWTZg9s24y_g-XtpPtOTNE6I5MWN_6rLrBgokcPYawGYMR8QMGurel-E4k5sn2qnjiV7Ru9ulQuBowuC3aUhbc0Y8FOzrnQGZRA-94wYr44ja1XH6M2306IDg" alt="Filme 2">
+          fabrica de chocolate
+        </a>
+      </div>
+      <div class="filme">
+        <a href="#">
+          <img src="https://quindim.com.br/blog/wp-content/uploads/2021/10/Filmes-infantis-2020.-Dois-irmaos.jpg" alt="Filme 3">
+          Dois irmaos
+        </a>
+      </div>
+    </section>
+
+    <!-- Ícone voltar -->
+    <a href="#" class="voltar">⬅</a>
+
+  </div>
+</body>
+</html>
