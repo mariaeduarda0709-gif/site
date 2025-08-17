@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Filme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Topo roxo ===== */
+.topo {
+    background-color: #ae85d1; /* Roxo claro */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+/* Botão voltar */
+.voltar {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Ícone câmera central */
+.icone-camera {
+    font-size: 40px;
+}
+
+/* Ícones à direita */
+.icones-topo a {
+    margin-left: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+/* ===== Menu categorias ===== */
+nav {
+  background-color: #000;       
+  padding: 15px 30px;           
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;           
+}
+
+nav a {
+  color: #fff;                  
+  text-decoration: none;         
+  font-weight: bold;             
+  font-size: 16px;               
+  transition: color 0.3s ease;   
+}
+
+nav a:hover {
+  color: #ffcc00;                
+}
+
+/* ===== Conteúdo principal ===== */
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Caixa de descrição */
+.descricao {
+    background-color: #d7aefb; /* Roxo claro */
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    line-height: 1.4;
+    transition: background-color 0.2s;
+}
+
+.descricao:hover {
+    background-color: #c29de4;
+}
+
+/* Área do filme */
+.filme {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s;
+}
+
+.filme:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem com borda de película */
+.imagem {
+    width: 140px;
+    height: 120px;
+    background: url('https://via.placeholder.com/140x120/99ccff/ffffff') center/cover;
+    border: 8px solid transparent;
+    border-image: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Film_strip.svg') 30 round;
+}
+
+/* Título do filme */
+.filme p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+</style>
+</body>
+</html>
+
+<body>
+ <!-- ===== Topo roxo ===== -->
+    <header class="topo">
+        <!-- Botão de voltar -->
+        <a href="#" class="voltar">⬅</a>
+        <!-- Ícone de câmera -->
+        <div class="icone-camera">🎥</div>
+        <!-- Ícones à direita -->
+        <div class="icones-topo">
+            <a href="#">⭐</a>
+            <a href="#">👤</a>
+        </div>
+    </header>
+
+    <!-- ===== Menu de categorias ===== -->
+    <nav class="menu-categorias">
+        <a href="#">terror</a>
+        <a href="#">comedia</a>
+        <a href="#">romance</a>
+        <a href="#">ação</a>
+        <a href="#">ficção científica</a>
+    </nav>
+
+    <!-- ===== Área principal com duas colunas ===== -->
+    <main class="conteudo">
+        <!-- Coluna esquerda - Descrição -->
+        <a href="#" class="descricao">
+            o Clube dos Perdedores consegue derrotar o Pennywise esmagando seu coração, após o transformarem num ser pequeno e fraco ao superarem os medos. Eddie é morto na batalha e sua morte atinge Richie, enquanto Ben e Beverly ficam juntos. Bill, Bev, Ben, Mike e Richie sobrevivem, com os dois primeiros casando-se, Richie voltando à ponte de Derry e Mike se mudando da cidade, encerrando assim a saga de forma relativamente positiva para os sobreviventes
+        </a>
+
+        <!-- Coluna direita - Imagem e título -->
+        <a href="#" class="filme">
+            <div class="https://br.web.img3.acsta.net/c_310_420/pictures/19/08/14/16/00/5320567.jpg"></div>
+            <p>IT CAPÍTULO 2</p>
+
+        </a>
+    </main>
+</body>
