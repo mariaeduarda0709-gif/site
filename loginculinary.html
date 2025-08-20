@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Receita Rosa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #ffd6e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      width: min(900px, 100%);
+      max-width: 100%;
+    }
+
+    .form-side {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .form-side h1 {
+      font-size: 32px;
+      color: #d63384;
+    }
+
+    .form-side p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .form-side input {
+      padding: 14px;
+      font-size: 16px;
+      border: 1px solid #e4cdd4;
+      border-radius: 8px;
+      background-color: #fff0f6;
+      outline: none;
+    }
+
+    .form-side input:focus {
+      border-color: #d63384;
+      box-shadow: 0 0 0 3px rgba(214, 51, 132, 0.2);
+    }
+
+    .form-side button {
+      background-color: #d63384;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 0;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .form-side button:hover {
+      background-color: #c12c75;
+    }
+
+    .form-side .register {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .form-side .register a {
+      color: #d63384;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .form-side .register a:hover {
+      text-decoration: underline;
+    }
+
+    .image-side {
+      background: url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0') no-repeat center;
+      background-size: cover;
+    }
+
+    @media (max-width: 768px) {
+      .login-container {
+        grid-template-columns: 1fr;
+      }
+
+      .image-side {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="login-container">
+    <section class="form-side">
+      <h1>Culinary impress</h1>
+      <p>Entre para acessar suas receitas favoritas </p>
+
+      <form action="#" method="post" class="login-form">
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <input type="password" name="password" placeholder="Sua senha" required />
+        <button type="submit">Entrar</button>
+      </form>
+
+      <p class="register">Não tem conta? <a href="#">Criar agora</a></p>
+    </section>
+
+    <section class="image-side" aria-hidden="true"></section>
+  </main>
+</body>
+</html>
