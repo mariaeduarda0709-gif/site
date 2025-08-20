@@ -86,6 +86,14 @@
       flex-wrap: wrap;
     }
 
+    .recipe-image {
+      width: 200px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
     .recipe-content {
       display: flex;
       flex-direction: column;
@@ -133,9 +141,21 @@
         align-items: flex-start;
       }
 
+      .recipe-image {
+        width: 100%;
+      }
+
       .recipe-content {
         max-width: 100%;
       }
+    }
+
+    #mensagem {
+      text-align: center;
+      font-size: 18px;
+      color: #b03070;
+      margin-top: 30px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -149,7 +169,6 @@
     </div>
   </header>
 
-  
   <nav>
     <button class="nav-button">Massas</button>
     <button class="nav-button">Sobremesas</button>
@@ -161,44 +180,59 @@
   <section class="recipes-section">
 
     <div class="recipe-card">
+      <img src="https://static.itdg.com.br/images/360-240/d30f2550068bdd64e089ff3e819938e5/100208-122765-original.jpg" alt="Bolo de Chocolate" class="recipe-image">
       <div class="recipe-content">
         <h2 class="recipe-title">Bolo de Chocolate</h2>
         <p class="recipe-description">
-          Um bolo de chocolate bem macio, coberto com uma generosa camada de ganache,ideal para aniversários.
+          Um bolo de chocolate bem macio, coberto com uma generosa camada de ganache, ideal para aniversários.
         </p>
-        <button class="recipe-button">Ver Receita</button>
+        <button class="recipe-button" onclick="mostrarMensagem('Bolo de Chocolate')">Ver Receita</button>
       </div>
     </div>
 
     <div class="recipe-card">
+      <img src="https://moinhoglobo.com.br/wp-content/uploads/2015/10/panqueca-americana-1.jpg" alt="Panquecas" class="recipe-image">
       <div class="recipe-content">
         <h2 class="recipe-title">Panquecas</h2>
         <p class="recipe-description">
           Altas, fofinhas e douradas! Sirva com mel, frutas ou um toque de manteiga no café da manhã.
         </p>
-        <button class="recipe-button">Ver Receita</button>
+        <button class="recipe-button" onclick="mostrarMensagem('Panquecas')">Ver Receita</button>
       </div>
     </div>
 
     <div class="recipe-card">
+      <img src="https://lh4.googleusercontent.com/proxy/rhsMzfLSIR0-MyTPdPU9KpO3eGFhIRPQWISZMjaSldUXSLOl-Npsa8O3gtNCRW2m242t9AYqfUdMHWeutuN09PcXxHdu9J57bdJl1_jJMdlDXj1NG2BQZaMTxB4KuNklsXzLwQ" alt="Lasanha de Frango" class="recipe-image">
       <div class="recipe-content">
-     <h2 class="recipe-title">Lasanha de Frango</h2>
-       <p class="recipe-description">
+        <h2 class="recipe-title">Lasanha de Frango</h2>
+        <p class="recipe-description">
           Camadas de massa, frango desfiado com molho branco cremoso e queijo gratinado. Uma explosão de sabor no forno!
         </p>
-        <button class="recipe-button">Ver Receita</button>
+        <button class="recipe-button" onclick="mostrarMensagem('Lasanha de Frango')">Ver Receita</button>
       </div>
     </div>
 
     <div class="recipe-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwhZmtXU0SA_KELjvThTOHbUYUI4qK_1ZgQ&s" alt="Salada Colorida" class="recipe-image">
       <div class="recipe-content">
-        <h2 class="recipe-title">Salada Colorida </h2>
+        <h2 class="recipe-title">Salada Colorida</h2>
         <p class="recipe-description">
           Uma combinação de folhas verdes, legumes e frango grelhado. Ótima opção para quem busca sabor e saúde.
         </p>
-        <button class="recipe-button">Ver Receita</button>
+        <button class="recipe-button" onclick="mostrarMensagem('Salada Colorida')">Ver Receita</button>
       </div>
     </div>
+
   </section>
+
+  <p id="mensagem"></p>
+
+  <script>
+    function mostrarMensagem(nomeReceita) {
+      document.getElementById('mensagem').textContent = `Você clicou em "${nomeReceita}"!`;
+    }
+  </script>
+
 </body>
 </html>
+
